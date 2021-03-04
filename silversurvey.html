@@ -9,27 +9,48 @@
 <body>
     <header>
         <h1 id="title">Silver Survey Form</h1>
-        <p id="description">Let us see how much you have</p>
+        <p id="description">Share with us how much you have</p>
     </header>
     <main>
         <form id="survey-form">
             <div>
                 <label for="name">Name</label><br />
-                <input type="text" id="name" name="name" /><br />
+                <input type="text" id="name" name="name" /><br /><br />
                 <label for="email">Email</label><br />
-                <input type="text" id="email" name="email" /><br />
+                <input type="email" id="email" name="email" /><br /><br />
                 <label for="age">Age (optional)</label><br />
-                <input type="text" id="age" name="age" /><br />
+                <input type="text" id="age" name="age" /><br /><br />
                 <label>How many years have you been colllecting?</label><br />
-                <input /><br />
-                <label>What do you preffer to collect?</label><br />
-                <input /><br />
+                <select>
+                    <option value="0">less than one year</option>
+                    <option value="1">1-3 years</option>
+                    <option value="2">3-5 years</option>
+                    <option value="3">5+ years</option>
+                </select><br /><br />
+                <label>What do you preffer to collect?</label><br /><br />
+                <input type="radio" id="bar" name="collect" value="bar"/>
+                <label for="bar">Bar</label>
+                <input type="radio" id="coin" name="collect" value="coin" />
+                <label for="coin">Coin</label>
+                <input type="radio" id="round" name="collect" value="round" />
+                <label for="round">Round</label>
+                <br /><br />
                 <label>What price do you intend to sell at?</label><br />
-                <input /><br />
+                <select>
+                    <option>$50</option>
+                    <option>$100</option>
+                    <option>$500</option>
+                    <option>$1,000+</option>
+                    <option>Never</option>
+                </select><br /><br />
                 <label>What different types do you currently have?</label><br />
-                <input /><br />
+                <input type="checkbox" id="eagle" name="eagle" value="eagle"/>
+                <label for="eagle">Silver Eagle</label>
+                <input type="checkbox" id="maple" name="maple" value="maple" />
+                <label for="maple">Maple Leaf</label><br /><br />
                 <label>Additional comment</label><br />
-                <input /><br />
+                <textarea rows="10" cols="30">Additional comments or concerns
+                </textarea><br /><br />
                 <input type="submit" value="Submit" />
             </div>
         </form>
