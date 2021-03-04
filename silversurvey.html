@@ -14,20 +14,20 @@
     <main>
         <form id="survey-form">
             <div>
-                <label for="name">Name</label><br />
-                <input type="text" id="name" name="name" /><br /><br />
-                <label for="email">Email</label><br />
-                <input type="email" id="email" name="email" /><br /><br />
-                <label for="age">Age (optional)</label><br />
-                <input type="text" id="age" name="age" /><br /><br />
+                <label for="name" id="name-label">Name</label><br />
+                <input type="text" id="name" name="name" required placeholder="Name"/><br /><br />
+                <label for="email" id="email-label">Email</label><br />
+                <input type="email" id="email" name="email" required placeholder="Email"/><br /><br />
+                <label for="age" id="number-label">Age (optional)</label><br />
+                <input type="number" id="number" name="age" min="13" max="120" placeholder="Age"/><br /><br />
                 <label>How many years have you been colllecting?</label><br />
-                <select>
+                <select id="dropdown">
                     <option value="0">less than one year</option>
                     <option value="1">1-3 years</option>
                     <option value="2">3-5 years</option>
                     <option value="3">5+ years</option>
                 </select><br /><br />
-                <label>What do you preffer to collect?</label><br /><br />
+                <label>What do you preffer to collect?</label><br />
                 <input type="radio" id="bar" name="collect" value="bar"/>
                 <label for="bar">Bar</label>
                 <input type="radio" id="coin" name="collect" value="coin" />
@@ -44,14 +44,33 @@
                     <option>Never</option>
                 </select><br /><br />
                 <label>What different types do you currently have?</label><br />
-                <input type="checkbox" id="eagle" name="eagle" value="eagle"/>
+                <input type="checkbox" id="eagle" name="stack" value="eagle"/>
                 <label for="eagle">Silver Eagle</label>
-                <input type="checkbox" id="maple" name="maple" value="maple" />
-                <label for="maple">Maple Leaf</label><br /><br />
+                <input type="checkbox" id="maple" name="stack" value="maple" />
+                <label for="maple">Maple Leaf</label>
+                <input type="checkbox" id="kook" name="stack" value="kook" />
+                <label for="kook">Kookaburra</label><br />
+                <input type="checkbox" id="brit" name="stack" value="brit" />
+                <label for="brit">Britannia</label>
+                <input type="checkbox" id="lib" name="stack" value="lib" />
+                <label for="lib">Libertad</label>
+                <input type="checkbox" id="genro" name="stack" value="genro" />
+                <label for="genro">Generic Rounds</label><br />
+                <input type="checkbox" id="genbar" name="stack" value="genbar" />
+                <label for="genbar">Generic Bars</label>
+                <input type="checkbox" id="junk" name="stack" value="junk" />
+                <label for="junk">Junk Silver 90%</label>
+                <input type="checkbox" id="jewel" name="stack" value="jewel" />
+                <label for="jewel">Jewelry</label><br />
+                <input type="checkbox" id="panda" name="stack" value="panda" />
+                <label for="panda">Pandas</label>
+                <input type="checkbox" id="bullet" name="stack" value="bullet" />
+                <label for="bullet">Bullets</label>
+                <input type="checkbox" id="other" name="stack" value="other" />
+                <label for="other">Other</label><br /><br />
                 <label>Additional comment</label><br />
-                <textarea rows="10" cols="30">Additional comments or concerns
-                </textarea><br /><br />
-                <input type="submit" value="Submit" />
+                <textarea rows="10" cols="30">Additional comments or concerns</textarea><br /><br />
+                <input type="submit" value="Submit" id="submit" />
             </div>
         </form>
     </main>
